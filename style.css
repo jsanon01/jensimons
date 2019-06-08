@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	/*box-sizing: none;*/
 }
 
 body {
@@ -17,7 +18,7 @@ article {
 
 @supports (display: grid) {
 	main {
-		max-width: 1500px;
+		max-width: 10000px;
 		margin: 0;
 	}
 }
@@ -25,14 +26,12 @@ article {
 
 .deals {
 	font-family: Avenir, Roboto, Helvetica, sans-serif;
-	font-size: 80%''
-
-
+	font-size: 80%;
 }
 
 .deals {
 	display: grid;
-	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 1rem;	
 }
 
@@ -51,9 +50,10 @@ article {
 
 .sale-item > h1 {
 	margin: 1rem 1rem 0;
+	text-align: center;
 }
 
-.sale-item > button {
+/*.sale-item > button {
 	margin-top: auto;
 	background: teal;
 	color: white;
@@ -61,18 +61,30 @@ article {
 	border: none;
 	border-radius: 1rem;
 	font-size: 1.2rem;
-}
+}*/
 
 .sale-item > ul {
 	margin: 0 0 1rem;
 }
 
 .sale-item > img {
-	order: -1;
+	border-radius: 5px;
+/*	order: -1; */
 	align-self: center;
+	width: 200px;	
+	height: 200px;
+	text-align: center;
 }
 
+/*.sale-item > img {
+	width: 200px;	
+	height: 200px;
+	text-align: center;
+}*/
 
+.sale-item > p {
+	text-align: center;
+}
 article {
 	margin: 0;
 }
