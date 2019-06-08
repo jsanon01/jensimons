@@ -1,0 +1,82 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	padding: 1rem;
+}
+
+main {
+	max-width: 500px;
+	margin: 0 auto;
+}
+
+article {
+	margin: 1rem 0;
+}
+
+@supports (display: grid) {
+	main {
+		max-width: 1500px;
+		margin: 0;
+	}
+}
+
+
+.deals {
+	font-family: Avenir, Roboto, Helvetica, sans-serif;
+	font-size: 80%''
+
+
+}
+
+.deals {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	grid-gap: 1rem;	
+}
+
+/*main {
+	max-width: 10000px;
+	margin: 0;
+}*/
+
+.sale-item {
+	display: flex;
+	flex-flow: column;
+	border: 1px solid blue;
+	border-radius: 1rem;
+	padding: 2rem;
+}
+
+.sale-item > h1 {
+	margin: 1rem 1rem 0;
+}
+
+.sale-item > button {
+	margin-top: auto;
+	background: teal;
+	color: white;
+	padding: 0.5rem;
+	border: none;
+	border-radius: 1rem;
+	font-size: 1.2rem;
+}
+
+.sale-item > ul {
+	margin: 0 0 1rem;
+}
+
+.sale-item > img {
+	order: -1;
+	align-self: center;
+}
+
+
+article {
+	margin: 0;
+}
+
+button:hover {
+	color: red;
+}
