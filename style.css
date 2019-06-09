@@ -33,6 +33,7 @@ article {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	grid-gap: 1rem;	
+	text-align: center;
 }
 
 /*main {
@@ -53,6 +54,34 @@ article {
 	text-align: center;
 }
 
+/*h1 {
+	text-align: center;
+}*/
+
+.special {
+	font-family: "Sacramento";
+	font-size: 3rem;
+	color: red;
+	text-align: auto;
+/*	align-self: center;*/
+}
+
+.comite {
+  font-family: "Sacramento";
+  color: red;
+  font-size: 3rem;
+/*  font-weight: bold;*/
+  text-align: center;
+  padding-top: 20px;
+  line-height: 2;
+  font-weight: 5rem;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 55px;
+}
 /*.sale-item > button {
 	margin-top: auto;
 	background: teal;
