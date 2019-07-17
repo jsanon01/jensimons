@@ -1,2 +1,2 @@
 # jensimons
-demo website related to responsive
+Demo website Related to Responsive Website
